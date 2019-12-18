@@ -1,0 +1,9 @@
+{
+    "require": {
+        "romainrg/ratchet_client": "^1.0",
+        "cboden/ratchet": "^0.4.1",
+        "textalk/websocket": "^1.2",
+        "twitter/bootstrap": "^4.4",
+        "components/jquery": "^3.4"
+    }
+}
