@@ -1,35 +1,28 @@
 ###################
-What is CodeIgniter
+What is Event Management System
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
+Event Management System is an Application Development Under Codeigniter Framework for people
+who build Event management System using PHP language. Its goal is to enable you to develop event
+much faster than you could if you were create event mannually, by providing
 a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+interface and logical structure to access these libraries. Event Management System lets
+you creatively focus on your event by minimizing the amount of task needed
+for a given event.
 
 *******************
 Release Information
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+This repo contains in-development code for future releases.
 
 *******************
 Server Requirements
 *******************
 
-PHP version 5.6 or newer is recommended.
+- PHP version 5.6 or newer is recommended.
+- MySql Server / MariaDb
+- Websocket CLI
 
 It should work on 5.3.7 as well, but we strongly advise you NOT to run
 such old versions of PHP, because of potential security and performance
@@ -39,32 +32,34 @@ issues, as well as missing features.
 Installation
 ************
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+- Run Server & Database Service like apache/nginx & Mysql/Mysqli or whatever you use.
+- Import database
+- change the database user & password
+- open cli on directory of project
+- and write this code on cli
+	"php index.php welcome cli"
+- done
+
 
 *******
 License
 *******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Please see the license
+agreement on CodeIgniter site and all library.
 
 *********
 Resources
 *********
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+-  `About Developer <https://instagram.com/aliffirdi_>`_
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Report security issues to our `Alif Firdi <mailto:aliffirdi07@gmail.com>`_
+or via our `Instagram <https://instagram.com/aliffirdi_>`_, thank you.
 
 ***************
 Acknowledgement
 ***************
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+The EMS team would like to thank CodeIgniter Framework, all the
+contributors to the EMS project and you, the EMS user.
