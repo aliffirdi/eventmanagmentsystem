@@ -12,90 +12,140 @@
 <script src="<?php echo base_url("vendor/twitter/bootstrap/dist/js/bootstrap.min.js"); ?>"></script>
 <script src="<?php echo base_url("vendor/easytimer/dist/easytimer.js"); ?>"></script>
 </head>
-<body class=" bg-dark">
-<div class="container-fluid bg-primary text-white">
-  <center>
-	  <div class="display-1">POPDA IX KAB.SUBANG 2019</div><br>
-<div class="row bg-white">
-	<div class="col-sm-12">Cabang Olahraga Pencak Silat.</div>
-</div>
-<div class="row bg-dark text-white">
-  <div class="col-sm-5">
+<body>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-5 float-left">
   	<br>
-  	<div class="col-sm-12 bg-white">
-  		<br><h1><font id="peserta_sudut_red" color="red">PESERTA SUDUT MERAH</font></h1><br>
+  	<div class="col-sm-12 float-left" style="background: red;">
+  		<font class="display-4" id="peserta_sudut_red" color="white">PESERTA SUDUT MERAH</font>
   	</div>
-  	<br>
-  	<div class="col-sm-12 bg-white">
-  		<br><br><h1><font color="red" id="red_score" class="display-1">0</font></h1><br><br>
+
+  	<div class="col-sm-11 float-left" style="background: red;">
+  		<h2><font id="kontingen_sudut_red" color="white">NAMA KONTINGEN</font></h2>
   	</div>
   </div>
   <div class="col-sm-2">
-  	<br>
-  		<h1>KELAS</h1>
-  		<div class="col-sm-12 bg-white">
-  			<br><h1><font color="black" size="50px" id="kelas_tanding">~</font></h1><br>
-  		</div>
+  	<br><center>
+  		<img src="<?php echo base_url("/vendor/ems.png"); ?>" alt="" width="60%">
+  		</center>
+  </div>
 
-  		<h1>BABAK</h1>
-  		<div class="col-sm-12 bg-white">
-  			<br><h1><font color="black" size="50px" id="babak_tanding">~</font></h1><br>
-  		</div>
-  </div>
-  <div class="col-sm-5">
+  <div class="col-sm-5 float-right" align="right">
   	<br>
-  	<div class="col-sm-12 bg-white">
-  		<br><h1><font id="peserta_sudut_blue" color="blue">PESERTA SUDUT BIRU</font></h1><br>
+  	<div class="col-sm-12 float-right" style="background: blue;">
+  		<font class="display-4" id="peserta_sudut_blue" color="white">PESERTA SUDUT BIRU</font>
   	</div>
-  	<br>
-  	<div class="col-sm-12 bg-white">
-  		<br><br><h1><font color="blue" id="blue_score" class="display-1">0</font></h1><br><br>
+  	<div class="col-sm-11 float-right" style="background: blue;" >
+  		<h2><font id="kontingen_sudut_blue" color="white">NAMA KONTINGEN</font></h2>
   	</div>
-  	<br>
   </div>
+
+  	<div class="col-sm-5">
+  		<center><br>
+  			<h1>TOTAL SCORE</h1>
+  		<h1><font color="red" id="red_score" class="display-1">0</font></h1>
+  		</center>
+  	</div>
+  	<div class="col-sm-2">
+  		<center>
+  			<h1>SCORE RESULT</h1>
+  		</center>
+  	</div>
+  	<div class="col-sm-5">
+  		<center><br>
+  			<h1>TOTAL SCORE</h1>
+  		<h1><font color="blue" id="blue_score" class="display-1">0</font></h1>
+  		</center>
+  	</div>
+
   <div class="col-sm-12">
-	  <div class="col-sm-4 bg-white">
-	  			<br><h1><font color="black" class="display-3"><div id="waktu"><div class="values">READY</div></div></font></h1><br>
+	  <div class="col-sm-12"><br>
+	  			<table width="100%" border="1">
+	  				<thead>
+	  					<tr>
+	  						<th rowspan="2"><h3><center>RONDE</center></h3></th>
+	  						<th colspan="2"><h3><center>JURI 1</center></h3></th>
+	  						<th colspan="2"><h3><center>JURI 2</center></h3></th>
+	  						<th colspan="2"><h3><center>JURI 3</center></h3></th>
+	  						<th colspan="2"><h3><center>JURI 4</center></h3></th>
+	  						<th colspan="2"><h3><center>JURI 5</center></h3></th>
+	  					</tr>
+	  					<tr>
+	  						<th style="background: red; color: white;"><center>MERAH</center></th>
+	  						<th style="background: blue; color: white;"><center>BIRU</center></th>
+	  						<th style="background: red; color: white;"><center>MERAH</center></th>
+	  						<th style="background: blue; color: white;"><center>BIRU</center></th>
+	  						<th style="background: red; color: white;"><center>MERAH</center></th>
+	  						<th style="background: blue; color: white;"><center>BIRU</center></th>
+	  						<th style="background: red; color: white;"><center>MERAH</center></th>
+	  						<th style="background: blue; color: white;"><center>BIRU</center></th>
+	  						<th style="background: red; color: white;"><center>MERAH</center></th>
+	  						<th style="background: blue; color: white;"><center>BIRU</center></th>
+	  					</tr>
+	  					<tr>
+	  						<th width="5%"><center><h1><font class="display-4" id="ronde">I</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  					</tr>
+	  					<tr>
+	  						<th width="5%"><center><h1><font class="display-4" id="ronde">II</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  					</tr>
+	  					<tr>
+	  						<th width="5%"><center><h1><font class="display-4" id="ronde">III</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  					</tr>
+	  					<tr>
+	  						<th width="5%"><center><font>JUMLAH</font></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
+	  						<th width="5%"><center><h1><font class="display-4" id="red_jr2" color="blue">0</font></h1></center></th>
+	  					</tr>
+	  				</thead>
+	  			</table>
 	  </div>
-	  <br>
-  </div>
-  <div class="col-sm-12">
 	  <div class="col-sm-12">
-	  			<table width="100%">
-	  				<thead>
-	  					<tr>
-	  						<th width="20%"><center><h1>Juri 1</h1></center></th>
-	  						<th width="20%"><center><h1>Juri 2</h1></center></th>
-	  						<th width="20%"><center><h1>Juri 3</h1></center></th>
-	  						<th width="20%"><center><h1>Juri 4</h1></center></th>
-	  						<th width="20%"><center><h1>Juri 5</h1></center></th>
-	  					</tr>
-	  				</thead>
-	  			</table>
-	  </div>
-	  <div class="col-sm-12 bg-white">
-	  			<table width="100%">
-	  				<thead>
-	  					<tr>
-	  						<th width="20%"><center><h1><font class="display-4" id="red_jr1" color="red">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="red_jr2" color="red">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="red_jr3" color="red">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="red_jr4" color="red">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="red_jr5" color="red">0</font></h1></center></th>
-	  					</tr>
-	  					<tr>
-	  						<th width="20%"><center><h1><font class="display-4" id="blue_jr1" color="blue">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="blue_jr2" color="blue">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="blue_jr3" color="blue">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="blue_jr4" color="blue">0</font></h1></center></th>
-	  						<th width="20%"><center><h1><font class="display-4" id="blue_jr5" color="blue">0</font></h1></center></th>
-	  					</tr>
-	  				</thead>
-	  			</table>
+		  			<br><h1><font color="black" class="display-3 float-right"><div id="waktu"><div class="values">READY</div></div></font></h1><br>
+		  <br>
 	  </div>
   </div>
+
 </div>
-</center>
 </div>
 <div id="ticket"></div>
 </body>
